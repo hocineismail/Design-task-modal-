@@ -1,6 +1,8 @@
-$priamry-font-family: "Cairo", sans-serif
-$primary-color: black;
-$secondary-color: rgb(92, 92, 92);
+$priamry-font-family: "Roboto", sans-serif
+$primary-color: black
+$secondary-color: rgb(92, 92, 92)
+$priamry-background-color: white
+$background-opacity: rgba(0, 0, 0, 0.514) 
 
 html, body 
   margin: 0
@@ -10,9 +12,8 @@ html, body
 main 
   padding: 20px
   
-
 .overflow
-    background-color: rgba(0, 0, 0, 0.514) 
+    background-color: $background-opacity 
     position: fixed
     z-index: 2
     left: 0
@@ -22,16 +23,14 @@ main
     overflow-y: auto  
 
 .modal 
-    
     min-height: 90vh 
     display: flex 
     align-items: center 
     justify-content: center 
     margin: 15px 
-
     .modal-box 
         margin: 100px 
-        background-color: white 
+        background-color: $priamry-background-color 
         width: 100%  
         margin: auto  
         max-width:  650px  
@@ -50,7 +49,6 @@ main
         .logo 
             width: 60px 
             margin-bottom: -10px 
-
 
 .close-button  
     cursor: pointer
@@ -79,21 +77,16 @@ main
     img 
         width: 100%
     
-
-
 figure 
     margin: 20px 20px 10px 0px
     figcaption 
         font-size: 14px
         color: $secondary-color
         text-align: center
-    
-
 
 .footnote 
     font-size: 14px
  
-
 @media screen and (max-width: 576px) 
     .modal .modal-box 
         max-width:  400px 
