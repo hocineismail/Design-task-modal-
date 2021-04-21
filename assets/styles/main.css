@@ -8,7 +8,7 @@ main {
   padding: 20px;
 }
 
-.overflow {
+.overlay {
   background-color: rgba(0, 0, 0, 0.514);
   position: fixed;
   z-index: 2;
@@ -110,6 +110,7 @@ figure figcaption {
   font-size: 14px;
 }
 
+/* For Small screen  */
 @media screen and (max-width: 576px) {
   .modal .modal-box {
     max-width: 400px;
